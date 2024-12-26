@@ -2,24 +2,22 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package ctrdeinventario;
-
-import java.util.Arrays;
+package inventario;
 
 /**
  *
  * @author achoc
  */
-public class Libro extends Producto {
+public class Deporte extends Producto {
 
-    private String autor;
+    private String disciplina;
 
-    public Libro(String nombre, String descripcion, double precio, int descuento, int stock, String categoria, String autor) {
+    public Deporte(String nombre, String descripcion, double precio, int descuento, int stock, String categoria, String disciplina) {
         super(nombre, descripcion, precio, descuento, stock, categoria);
-        this.autor = autor;
+        this.disciplina = disciplina;
     }
 
-    public Libro() {
+    public Deporte() {
         this("", "", 0.0, 0, 0, "", "");
     }
 
@@ -31,7 +29,7 @@ public class Libro extends Producto {
 
     @Override
     public String MostrarInformacion() {
-        return "Libro [ " + "nombre: " + getNombre() + ", descripcion: " + getDescripcion() + ", precio: " + getPrecio() + ", descuento: " + getDescuento() + ", stock: " + getStock() + ", categoria: " + getCategoria() + ", autor: " + autor + " ]";
+        return "Deporte [ " + "nombre: " + getNombre() + ", descripcion: " + getDescripcion() + ", precio: " + getPrecio() + ", descuento: " + getDescuento() + ", stock: " + getStock() + ", categoria: " + getCategoria() + ", disciplina: " + disciplina + " ]";
     }
 
 }
